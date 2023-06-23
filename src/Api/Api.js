@@ -29,10 +29,28 @@ export const getFilm = async function (query) {
     // console.log(query)
     const response = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`);
     // console.log('api resp SearchFilm', response);
-    return response;
+    return response.data;
 }
 
 
+
+export const loadDetailFilm = async function (movieId) {
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}`);
+       console.log('api resp movId', response.data);
+    return response.data;
+}
+
+export const loadCastFilm = async function (movieId) {
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits`);
+    console.log('api resp credId', response);
+    return response;
+}
+
+export const loadReviewsFilm = async function (movieId) {
+    const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/reviews`);
+    console.log('api resp reviewId', response);
+    return response;
+}
 
 
 
