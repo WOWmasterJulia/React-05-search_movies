@@ -159,3 +159,61 @@
 // export default Movies;
 //_____________________________
 
+
+
+import { useEffect, useState } from 'react';
+import { Searchbar } from '../components/Search/Searchbar';
+import FilmList  from '../components/FilmList/FilmList';
+import { getFilm } from 'Api/Api';
+import { Wrapper, Text } from './Movies.styled';
+
+export const Movies = () => {
+  const [searchWord, setSearchWord] = useState('');
+  const [movies, setMovies] = useState([]);
+  const [page, setPage] = useState(1);
+  const [isEmpty, setIsEmpty] = useState(false);
+
+  useEffect(() => {
+    if (searchWord !== '') {
+      getFilm(searchWord.split('/')[1], page)
+        .then(resp => {
+          if (resp.length === 0) {
+            setIsEmpty(true);
+            return;
+          }
+          //setImages(prevState => [...prevState, ...resp]);
+          console.log(resp.data.results);
+          setMovies(resp.data.results);
+        })
+        .catch(error => {
+          console.log(error.message);
+        })
+        .finally(() => {});
+    }
+  }, [searchWord, page]);
+
+  const onSubmit = evt => {
+    evt.preventDefault();
+    const sw = evt.target.elements[1].value;
+    if (sw !== '') {
+      setSearchWord(`${Date.now()}/${sw}`);
+      setPage(1);
+      setMovies([]);
+      setIsEmpty(false);
+    }
+  };
+
+  console.log(movies);
+
+  movies.map(({ id, title, release_date }) => {
+    return console.log(id, title, Date.parse(release_date));
+  });
+
+  return (
+    <Wrapper>
+      <Searchbar SearchOnSubmit={onSubmit} />
+      <FilmList movies={movies} />
+      {isEmpty && <Text>Sorry. There are no movies ... 😭</Text>} 
+    </Wrapper>
+  );
+};

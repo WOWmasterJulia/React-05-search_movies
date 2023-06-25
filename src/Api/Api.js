@@ -36,8 +36,8 @@ export const getFilm = async function (query) {
 
 export const loadDetailFilm = async function (movieId) {
     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}`);
-       console.log('api resp movId', response.data);
-    return response.data;
+       console.log('api resp movId', response);
+    return response;
 }
 
 export const loadCastFilm = async function (movieId) {
