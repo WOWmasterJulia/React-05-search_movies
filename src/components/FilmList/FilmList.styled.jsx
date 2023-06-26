@@ -5,7 +5,7 @@ export const Container = styled.section`
   background-color: #fff;
 `;
 
-export const Title = styled.h1`
+export const MoviesTitle = styled.h1`
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: 700;

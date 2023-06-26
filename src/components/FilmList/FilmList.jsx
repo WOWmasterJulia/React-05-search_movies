@@ -1,44 +1,19 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { getMovies } from 'Api/Api';
-import { Title, Container, ListOfFilm } from './FilmList.styled';
+import { MoviesTitle, Container, ListOfFilm } from './FilmList.styled';
 
-const FilmList = () => {
-  const [films, setFilms] = useState([]);
-const [error, setError] = useState(null);
-  const location = useLocation(); //для отримання шляху з якого переходимо для передачи через props
 
-  useEffect(() => {
-    const fetchFilms = async () => {
-      try {
-        const data = await getMovies();
-        const films = data.results;
-        setFilms(films);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-
-    fetchFilms();
-  }, []);
-
+export const FilmList = ({ movies }) => {
+  const location = useLocation();
   return (
     <Container>
-      <Title>Trending today</Title>
-{error}
-      {/* {error && <p>Вибачте, але щось пішло не так :</p>} */}
-
-      <ListOfFilm>
-        {films.map(film => (
-          <li key={film.id}>
-            <Link to={`movies/${film.id}`} state={{ from: location }}>
-              {film.title}
-            </Link>
-          </li>
-        ))}
-      </ListOfFilm>
+      {movies.map(({ id, title, release_date }) => (
+        <ListOfFilm key={id}>
+          <Link to={`/movies/${id}`} state={{ from: location }}>
+            <MoviesTitle>{title} ({release_date})
+            </MoviesTitle>
+          </Link>
+        </ListOfFilm>
+      ))}
     </Container>
   );
 };
-
-export default FilmList;

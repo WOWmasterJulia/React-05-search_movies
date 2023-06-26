@@ -1,54 +1,71 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = `https://api.themoviedb.org/3`;
+// axios.defaults.baseURL = `https://api.themoviedb.org/3`;
 axios.defaults.params = {
   api_key: `2e42ce2c27880cb4cf3402f1ec0650d2`,
 };
 
-// const names = {
-//   trendings: '/trending/movie/day',
-//   search: '/search/movie',
-//   movie: '/movie/',
-//   details: '/movie/movie_id',
-//   credits: '/movie/movie_id/credits',
-//   reviews: '/movie/movie_id/reviews',
-// };
-// функція отримання переліку топових фільмів на стор HOME
-export const getMovies = async (page = 1) => {
-  const { data } = await axios.get('/trending/movie/day');
-  return data;
-};
 
-// export const getMoviesById = async id => {
-//   const { data } = await axios.get('movie/${id}');
-//   return data;
+// // функція отримання переліку топових фільмів на стор HOME
+// export const getMovies = async function () {
+//   const response = await axios.get('/trending/movie/day');
+//   return response.data;
 // };
 
-// функція пошуку фільма за назвою
-export const getFilm = async function (query) {
-    // console.log(query)
-    const response = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`);
-    // console.log('api resp SearchFilm', response);
+
+// // функція пошуку фільма за назвою
+// export const getFilm = async function (query) {
+//     const response = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`);
+//     return response.data;
+// }
+
+// export const getMovies = async function () {
+//     const response = await axios.get('https://api.themoviedb.org/3/trending/movie/day');
+//     return response.data;
+// }
+
+// export const loadDetailFilm = async function (movieId) {
+//     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}`);
+//     return response.data;
+// }
+
+// export const loadCastFilm = async function (movieId) {
+//     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits`);
+//     return response;
+// }
+
+// export const loadReviewsFilm = async function (movieId) {
+//     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/reviews`);
+//     return response;
+// }
+
+// export const getFilm = async function (query) {
+//     const response = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`);
+//     return response;
+// }
+
+export const getMovies = async function () {
+    const response = await axios.get('https://api.themoviedb.org/3/trending/movie/day');
     return response.data;
 }
 
-
-
 export const loadDetailFilm = async function (movieId) {
     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}`);
-       console.log('api resp movId', response);
-    return response;
+    return response.data;
 }
 
 export const loadCastFilm = async function (movieId) {
     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits`);
-    console.log('api resp credId', response);
     return response;
 }
 
 export const loadReviewsFilm = async function (movieId) {
     const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/reviews`);
-    console.log('api resp reviewId', response);
+    return response;
+}
+
+export const getFilm = async function (query) {
+    const response = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`);
     return response;
 }
 
