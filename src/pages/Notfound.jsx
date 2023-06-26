@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
-export const Links = styled(Link)`
+const Links = styled(Link)`
   display: block;
   margin-bottom: 10px;
   text-decoration: none;

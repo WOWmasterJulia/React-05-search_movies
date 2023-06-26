@@ -8,12 +8,11 @@ const MovieDetails = () => {
   const { id } = useParams();
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/movies';
-  const [movieInfo, setMovieInfo] = useState([]);
+  const [movieInfo, setMovieInfo] = useState(null);
   
   useEffect(() => {
     loadDetailFilm(id)
       .then(resp => {
-        console.log(resp);
         setMovieInfo(resp);
       })
       .catch(error => {
@@ -31,7 +30,6 @@ const MovieDetails = () => {
   }
   const genres = movieInfo.genres;
   const factGenres = genres.map(elem => elem.name + ' ').join('');
-  console.log('movieInfo', movieInfo)
   return (
     <>
       <BackLink to={backLinkHref}>GO BACK</BackLink>

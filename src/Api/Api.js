@@ -13,7 +13,6 @@ export const getMovies = async function () {
 
 export const loadDetailFilm = async function (movieId) {
   const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}`);
-  console.log('api resp', response);
     return response.data;
 }
 
