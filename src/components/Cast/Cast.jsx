@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { loadCastFilm } from 'Api/Api';
 import { Wrapper, Profile, ProfilePhoto } from './Cast.styled'
 import PropTypes from 'prop-types';
-import { ImUser } from "react-icons/im";
+// import { ImUser } from "react-icons/im";
+import avatar from './avatar.png'
 
 const Cast = () => {
   const { id } = useParams();
@@ -35,9 +36,10 @@ const Cast = () => {
             <ProfilePhoto
               src={profile_path
                   ? `https://image.tmdb.org/t/p/w300/${profile_path}`
-                  : ImUser}
+                  : avatar}
               alt="Actor photo"
-              width="100px"
+              width="120px"
+              height="170px"
             />
             <p>{name}</p>
             {/* <ImUser/> */}
