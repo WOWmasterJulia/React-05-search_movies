@@ -1,5 +1,5 @@
 import { getMovies } from 'Api/Api';
-import {FilmList} from '../components/FilmList/FilmList';
+import { FilmList } from '../components/FilmList/FilmList';
 import { useEffect, useState } from 'react';
 
 const Home = () => {

@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Home  from "pages/Home";
-import {Movies} from "pages/Movies";
+import Movies from "pages/Movies";
 import MovieDetails from "pages/MovieDetails";
-import {Cast} from './Cast/Cast';
-import {Reviews} from './Reviews/Reviews';
+import Cast from './Cast/Cast';
+import Reviews from './Reviews/Reviews';
 // import { Container, Header, Link } from "./App.styled";
 import { Layout } from './Layout/Layout';
 
@@ -22,25 +22,3 @@ export const App = () => {
   );
 };
 
-
-
-
-
-
-
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };

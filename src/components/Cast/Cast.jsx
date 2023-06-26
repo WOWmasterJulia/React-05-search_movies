@@ -1,29 +1,10 @@
-// const Cast = () => {
-//   return (
-//     <section>
-//       <ul>
-//         <li>
-//           <img src="https://via.placeholder.com/200x100" alt="" />
-//           <p>Lorem ipsum dolor.</p>
-//         </li>
-//         <li>
-//           <img src="https://via.placeholder.com/200x100" alt="" />
-//           <p>Lorem ipsum dolor.</p>
-//         </li>
-//       </ul>
-//     </section>
-//   );
-// };
-
-// export default Cast;
-
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { loadCastFilm } from 'Api/Api';
 import { Wrapper, Profile, ProfilePhoto } from './Cast.styled'
 import PropTypes from 'prop-types';
 
-export const Cast = () => {
+const Cast = () => {
   const { id } = useParams();
   const [castInfo, setCastInfo] = useState([]);
 
@@ -65,6 +46,7 @@ export const Cast = () => {
   );
 };
 
+export default Cast;
 
 Cast.protoType = {
   id: PropTypes.number.isRequired,
