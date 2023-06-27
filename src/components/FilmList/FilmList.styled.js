@@ -12,32 +12,45 @@ export const ListOfFilm = styled.ul`
   // flex-direction: column;
   // gap: 35px;
   margin-bottom: 15px;
-  padding-inline-start: 20px;
+  /* padding-inline-start: 20px; */
   
 `;
-// export const Link = styled.a`
-//   text-decoration-color: tomato;
-// `;
+
 export const MoviesTitle = styled.h1`
   margin: 0;
   font-size: 24px;
   font-weight: 500;
-  
-  // text-decoration: none;
+  /* border-bottom: 1px solid black;
+  text-decoration: none; */
+  /* > a {
+    text-decoration: none;
+  } */
+  /* :hover {
+    border-bottom: 2px solid blue;
+  } */
 `;
 
 export const Link = styled(NavLink)`
   /* text-decoration-color: tomato; */
-  text-decoration: none;
+  text-decoration: none; 
   color: black;
   
-  /* font-weight: 500; */
+  /* > a {
+    text-decoration: none;
+    
+  } */
+  :hover {
+    color: orangered;
+    text-decoration-color: orangered;
+    border-bottom: 1px solid blue;
+  } 
+   /* font-weight: 500;  */
 
 
-  &.active {
+  /* &.active {
     color: orangered;
     text-decoration-color: tomato;
-    /* background-color: orangered; */
-    /* border: 1px solid blue; */
-  }
+    text-decoration: orangered;
+    border: 1px solid blue;
+  } */
 `;
