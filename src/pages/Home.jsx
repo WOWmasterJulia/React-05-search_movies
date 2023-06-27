@@ -1,7 +1,21 @@
 import { getMovies } from 'Api/Api';
 import { FilmList } from '../components/FilmList/FilmList';
 import { useEffect, useState } from 'react';
+// import { title } from 'react-router-dom';
+import styled from "@emotion/styled";
 
+const TrendMovies = styled.h1`
+font-size: 24px;
+  display: inline-flex;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  :hover {
+    color: orangered;
+  }
+`;
 const Home = () => {
   const [datamovies, setDataMovies] = useState([]);
   useEffect(() => {
@@ -16,6 +30,7 @@ const Home = () => {
 
   return (
     <div>
+      <TrendMovies>Trending today</TrendMovies>
       <FilmList movies={datamovies} />
     </div>
   );
