@@ -49,9 +49,3 @@ width: 960px;
 border-bottom: 2px solid tomato;
 margin-bottom: 10px;
 `;
-
-// export const BackLink = styled.h3`
-// width: 960px;
-// border-bottom: 2px solid tomato;
-// margin-bottom: 10px;
-// `;

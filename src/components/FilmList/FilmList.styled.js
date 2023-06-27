@@ -28,6 +28,9 @@ export const MoviesTitle = styled.h1`
   /* :hover {
     border-bottom: 2px solid blue;
   } */
+  > span {
+    font-size: 14px;
+  }
 `;
 
 export const Link = styled(NavLink)`
