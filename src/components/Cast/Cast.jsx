@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { loadCastFilm } from 'Api/Api';
-import { Wrapper, Profile, ProfilePhoto } from './Cast.styled'
+import { Wrapper, Profile, ProfilePhoto, NameTitle, Actor } from './Cast.styled'
 import PropTypes from 'prop-types';
 // import { ImUser } from "react-icons/im";
 import avatar from './avatar.png'
@@ -41,9 +41,9 @@ const Cast = () => {
               width="120px"
               height="170px"
             />
-            <p>{name}</p>
+            <NameTitle>{name}</NameTitle>
             {/* <ImUser/> */}
-            <p>Character: {character}</p>
+            <Actor>Character: {character}</Actor>
           </Profile>
         ))}
       </Wrapper>

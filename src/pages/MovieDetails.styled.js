@@ -19,8 +19,8 @@ export const Links = styled(Link)`
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: blue;
-  font-weight: 500;
+  color: orangered;
+  font-weight: 700;
   :hover {
     text-transform: uppercase;
     text-decoration: dashed;
@@ -49,3 +49,9 @@ width: 960px;
 border-bottom: 2px solid tomato;
 margin-bottom: 10px;
 `;
+
+// export const BackLink = styled.h3`
+// width: 960px;
+// border-bottom: 2px solid tomato;
+// margin-bottom: 10px;
+// `;

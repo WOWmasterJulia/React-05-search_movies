@@ -28,7 +28,13 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-weight: 500;
-  
+  transform: scale(1);
+  transition: transform 200ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+  }
 
   &.active {
     color: white;
