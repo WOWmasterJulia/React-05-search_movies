@@ -1,5 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
-import { MoviesTitle, Container, ListOfFilm } from './FilmList.styled';
+import { useLocation } from 'react-router-dom';
+import { MoviesTitle, Container, ListOfFilm, Link } from './FilmList.styled';
 
 
 export const FilmList = ({ movies }) => {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.section`
   padding: 20px;
@@ -21,6 +22,22 @@ export const MoviesTitle = styled.h1`
   margin: 0;
   font-size: 24px;
   font-weight: 500;
-  color: black;
+  
   // text-decoration: none;
+`;
+
+export const Link = styled(NavLink)`
+  /* text-decoration-color: tomato; */
+  text-decoration: none;
+  color: black;
+  
+  /* font-weight: 500; */
+
+
+  &.active {
+    color: orangered;
+    text-decoration-color: tomato;
+    /* background-color: orangered; */
+    /* border: 1px solid blue; */
+  }
 `;
