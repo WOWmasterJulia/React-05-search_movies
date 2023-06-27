@@ -39,10 +39,6 @@ const Movies = () => {
     setSearchParams({ searchWord });
   };
 
-  // movies.map(({ id, title, release_date }) => {
-  //   return console.log(id, title, Date.parse(release_date));
-  // });
-
   return (
     <Wrapper>
       <Searchbar

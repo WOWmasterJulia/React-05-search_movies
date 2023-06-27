@@ -4,7 +4,6 @@ import Movies from "pages/Movies";
 import MovieDetails from "pages/MovieDetails";
 import Cast from './Cast/Cast';
 import Reviews from './Reviews/Reviews';
-// import { Container, Header, Link } from "./App.styled";
 import { Layout } from './Layout/Layout';
 import NotFound from "pages/Notfound";
 

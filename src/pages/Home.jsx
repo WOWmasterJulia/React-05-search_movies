@@ -1,7 +1,6 @@
 import { getMovies } from 'Api/Api';
 import { FilmList } from '../components/FilmList/FilmList';
 import { useEffect, useState } from 'react';
-// import { title } from 'react-router-dom';
 import styled from "@emotion/styled";
 
 const TrendMovies = styled.h1`

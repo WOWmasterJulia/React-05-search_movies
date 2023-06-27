@@ -5,8 +5,6 @@ export const Searchbar = ({value, onChange, SearchOnSubmit}) => (
     <>
         <Main>
             <Form onSubmit={SearchOnSubmit}>
-                {/* <Button type="submit" /> */}
-                
                 <Input
                 type="text"
                 autoComplete="off"
