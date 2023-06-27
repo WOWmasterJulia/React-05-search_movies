@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-05-search_movies/static/css/main.7acaea2f.css",
-    "main.js": "/React-05-search_movies/static/js/main.3041e4ad.js",
+    "main.js": "/React-05-search_movies/static/js/main.2cc292da.js",
     "index.html": "/React-05-search_movies/index.html",
     "main.7acaea2f.css.map": "/React-05-search_movies/static/css/main.7acaea2f.css.map",
-    "main.3041e4ad.js.map": "/React-05-search_movies/static/js/main.3041e4ad.js.map"
+    "main.2cc292da.js.map": "/React-05-search_movies/static/js/main.2cc292da.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.3041e4ad.js"
+    "static/js/main.2cc292da.js"
   ]
 }
