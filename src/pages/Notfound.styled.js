@@ -7,17 +7,39 @@ display: flex;
   align-items: center;
   row-gap: 10px;
   padding: 0 20px;
-  margin: 20px auto 0;
+  margin: 50px auto 0;
 `;
 
 export const Links = styled(NavLink)`
-  display: block;
-  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  min-width: 150px;
+  padding: 8px 16px;
+  border-radius: 4px;
   text-decoration: none;
-  color: orangered;
+  font-size: 16px;
   font-weight: 500;
-  :hover {
-    text-transform: uppercase;
-    text-decoration: dashed;
+  background-color: orangered;
+  color: #fff;
+
+  transition: transform 350ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    color 350ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    background-color 350ms cubic-bezier(0.65, 0.05, 0.36, 1);
+
+  &:hover {
+    transform: scale(1.03);
+    color: orangered;
+    background-color: #E1E3E9;
   }
+
+  /* &.active {
+    background-color: #E1E3E9;
+    color: orangered;
+
+    &:hover {
+      transform: scale(1.03);
+    } */
+  /* } */
 `;
