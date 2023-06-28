@@ -6,8 +6,9 @@ const NotFound = () => {
     <NFContainer>
       <h1>404</h1>
       <h2>Page Not Found</h2>
+      <p>Oops! This page does not exist!</p>
       <Links to="/" state={{ from: location.state?.from ?? '*' }}>
-        Oops! This page does not exist!
+        Back to Home
       </Links>
     </NFContainer>
   );

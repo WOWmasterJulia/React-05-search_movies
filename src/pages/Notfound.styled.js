@@ -14,7 +14,7 @@ export const Links = styled(NavLink)`
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: blue;
+  color: orangered;
   font-weight: 500;
   :hover {
     text-transform: uppercase;
