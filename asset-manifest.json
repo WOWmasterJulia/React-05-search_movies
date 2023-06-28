@@ -1,13 +1,29 @@
 {
   "files": {
     "main.css": "/React-05-search_movies/static/css/main.7acaea2f.css",
-    "main.js": "/React-05-search_movies/static/js/main.70a13269.js",
+    "main.js": "/React-05-search_movies/static/js/main.37a3fcba.js",
+    "static/js/229.30f3f941.chunk.js": "/React-05-search_movies/static/js/229.30f3f941.chunk.js",
+    "static/js/538.4a37f7f5.chunk.js": "/React-05-search_movies/static/js/538.4a37f7f5.chunk.js",
+    "static/js/162.93f809f2.chunk.js": "/React-05-search_movies/static/js/162.93f809f2.chunk.js",
+    "static/js/740.d6935eb0.chunk.js": "/React-05-search_movies/static/js/740.d6935eb0.chunk.js",
+    "static/js/779.dae2b373.chunk.js": "/React-05-search_movies/static/js/779.dae2b373.chunk.js",
+    "static/js/251.08e4cea1.chunk.js": "/React-05-search_movies/static/js/251.08e4cea1.chunk.js",
+    "static/js/279.884b8620.chunk.js": "/React-05-search_movies/static/js/279.884b8620.chunk.js",
+    "static/js/789.88de18b2.chunk.js": "/React-05-search_movies/static/js/789.88de18b2.chunk.js",
     "index.html": "/React-05-search_movies/index.html",
     "main.7acaea2f.css.map": "/React-05-search_movies/static/css/main.7acaea2f.css.map",
-    "main.70a13269.js.map": "/React-05-search_movies/static/js/main.70a13269.js.map"
+    "main.37a3fcba.js.map": "/React-05-search_movies/static/js/main.37a3fcba.js.map",
+    "229.30f3f941.chunk.js.map": "/React-05-search_movies/static/js/229.30f3f941.chunk.js.map",
+    "538.4a37f7f5.chunk.js.map": "/React-05-search_movies/static/js/538.4a37f7f5.chunk.js.map",
+    "162.93f809f2.chunk.js.map": "/React-05-search_movies/static/js/162.93f809f2.chunk.js.map",
+    "740.d6935eb0.chunk.js.map": "/React-05-search_movies/static/js/740.d6935eb0.chunk.js.map",
+    "779.dae2b373.chunk.js.map": "/React-05-search_movies/static/js/779.dae2b373.chunk.js.map",
+    "251.08e4cea1.chunk.js.map": "/React-05-search_movies/static/js/251.08e4cea1.chunk.js.map",
+    "279.884b8620.chunk.js.map": "/React-05-search_movies/static/js/279.884b8620.chunk.js.map",
+    "789.88de18b2.chunk.js.map": "/React-05-search_movies/static/js/789.88de18b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.70a13269.js"
+    "static/js/main.37a3fcba.js"
   ]
 }
