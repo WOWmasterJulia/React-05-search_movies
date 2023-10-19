@@ -1,7 +1,7 @@
 # SEARCH MOVIES | REACT
 
-![Search movies](./assets/movies-1.jpg)
-![Search movies](./assets/movies-2.jpg)
+![Search movies](./assets/movies_1.jpg)
+![Search movies](./assets/movies_2.jpg)
 
 ## Технічний стек / Technical stack
 
@@ -9,6 +9,11 @@
 ![Axios](https://img.shields.io/badge/Axios-%23000000.svg?style=for-the-badge&logo=axios&logoColor=white)
 ![Styled-Components](https://img.shields.io/badge/Styled_Components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-%23000000.svg?style=for-the-badge&logo=react-router&logoColor=white)
+
+
+
+
+
 
 # React homework template
 
