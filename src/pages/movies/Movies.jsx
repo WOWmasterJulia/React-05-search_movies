@@ -9,7 +9,6 @@ import { Wrapper, Text } from './Movies.styled';
 const Movies = () => {
   const [searchWord, setSearchWord] = useState('');
   const [movies, setMovies] = useState([]);
-  // const [isEmpty, setIsEmpty] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get('searchWord') ?? '';
   const [error, setError] = useState(null);

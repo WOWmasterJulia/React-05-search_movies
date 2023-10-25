@@ -30,7 +30,6 @@ export const Links = styled(Link)`
 export const Text = styled.p`
 margin: 0;
 margin-bottom: 10px;
-// background-color: white;
 opacity: 0.95;
 `;
 

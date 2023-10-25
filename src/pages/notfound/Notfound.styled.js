@@ -34,13 +34,4 @@ export const Links = styled(NavLink)`
     color: orangered;
     background-color: #E1E3E9;
   }
-
-  /* &.active {
-    background-color: #E1E3E9;
-    color: orangered;
-
-    &:hover {
-      transform: scale(1.03);
-    } */
-  /* } */
 `;
