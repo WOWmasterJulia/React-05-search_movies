@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.section`
   padding: 20px;
-  background-color: #fff;
-  
+  background-color: #fff;  
 `;
 
 export const ListOfFilm = styled.ul`

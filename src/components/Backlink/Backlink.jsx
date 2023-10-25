@@ -8,7 +8,6 @@ font-size: 16px;
   gap: 4px;
   padding: 0 0 8px 0;
   color: black;
-  // text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;

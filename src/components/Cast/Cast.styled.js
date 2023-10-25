@@ -7,17 +7,17 @@ export const Wrapper = styled.div`
 `;
 
 export const Profile = styled.li`
-display: block;
-text-align: center;
-background-color: white;
-opacity: 0.95;
+  display: block;
+  text-align: center;
+  background-color: white;
+  opacity: 0.95;
 `
 export const ProfilePhoto = styled.img`
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 `
 export const NameTitle = styled.h5`
-margin-top: 10px;
+  margin-top: 10px;
   margin-bottom: 0;
 `;
 

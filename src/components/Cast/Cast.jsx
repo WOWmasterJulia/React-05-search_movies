@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { loadCastFilm } from 'Api/Api';
 import { Wrapper, Profile, ProfilePhoto, NameTitle, Actor } from './Cast.styled'
 import PropTypes from 'prop-types';
-// import { ImUser } from "react-icons/im";
 import avatar from './avatar.png'
 
 const Cast = () => {
@@ -42,7 +41,6 @@ const Cast = () => {
               height="170px"
             />
             <NameTitle>{name}</NameTitle>
-            {/* <ImUser/> */}
             <Actor>Character: {character}</Actor>
           </Profile>
         ))}
@@ -58,10 +56,3 @@ Cast.protoType = {
   castInfo: PropTypes.array.isRequired,
   loadCastFilm: PropTypes.func.isRequired,
 }.isRequired;
-
-
-// {profile_path && <ProfilePhoto
-//               src={`https://image.tmdb.org/t/p/w300/${profile_path}`}
-//               alt="Actor photo"
-//               width="100px"
-//             />}
